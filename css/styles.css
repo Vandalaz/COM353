@@ -1,0 +1,49 @@
+ul {
+    list-style-type: square
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+#outer-container {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+#sidebar {
+	display: table-cell;
+	width: 15%;
+	vertical-align: top;
+	background-color: #42daf5;
+}
+
+#sidebar a {
+	display: block;
+	padding: 10px;
+	color: rgba(0, 0, 0, 0.5);
+	margin: 15px 0 0 0;
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: white !important;
+}
+
+#sidebar-nav-options{
+    font-weight: bold;
+}
+
+#content {
+    display: table-cell;
+    padding: 10px;
+	width: 85%;
+	vertical-align: top;
+}
