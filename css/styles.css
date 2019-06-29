@@ -51,3 +51,11 @@ body {
 ul {
 	padding-left: 1.2em;
 }
+
+select {
+	width: 400px;
+}
+
+#spacing{
+	padding-top:20px;
+}
