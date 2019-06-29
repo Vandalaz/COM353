@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Task 3 - More JS</title>
+
+    <script>
+        var myTextContainer = "A web browser ";
+        myTextContainer += "will follow your instructions ";
+        myTextContainer += "exactly and without an argument.";
+    </script>
+</head>
+
+<body>
+    <h1>Task 3 - More JS</h1>
+    <p>I expect the value of myTextContaienr to be "A web browser will follow your instructions exactly and without an argument."</p>
+    <p>To check this, I have set the below paragaph (coloured red) to <i>myTextContainer</i>.</p>
+    <p id="p1"></p>
+
+    <script>
+        var myParagraph = document.getElementById('p1');
+        myParagraph.innerHTML = myTextContainer;
+        myParagraph.style.color = 'Red';
+    </script>
+</body>
+
+
+
+</html>
