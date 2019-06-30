@@ -59,3 +59,22 @@ select {
 #spacing{
 	padding-top:20px;
 }
+
+#input-name{
+	width:400px;
+}
+
+form{
+	background-color: lightgray;
+	width: 410px;
+	border-radius:4px;
+	padding:10px;
+}
+
+#button-Practical5_Q3d-showConcatenatedInfo{
+	background-color: white;
+}
+
+#button-Practical5_Q3d-showGreeting{
+	background-color: white;
+}

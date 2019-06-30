@@ -30,12 +30,20 @@ function showConcatenatedInfo() {
     let selectedCampus = selectCampuses.options[selectCampuses.selectedIndex].text;
     let selectedCourse = selecCourses.options[selecCourses.selectedIndex].text;
 
+    if (selectedUni === null || selectedUni === "" || selectedUni == "-- select an option --") {
+        return "You have not selected a University."
+    } else if (selectedCampus === null || selectedCampus === "" || selectedCampus == "-- select an option --") {
+        return "You have not selected a Campus."
+    } else if (selectedCourse === null || selectedCourse === "" || selectedCourse == "-- select an option --") {
+        return "You have not selected a Course."
+    }
+
     let finalString = "I'm a third year " + selectedCourse + " student in " + selectedUni + " at " + selectedCampus;
 
     return finalString;
 }
 
-let showButton = document.getElementById('button-show');
-showButton.addEventListener('click', function(){
+let showButton = document.getElementById('button-Practical5_Q2-showConcatenatedInfo');
+showButton.addEventListener('click', function () {
     alert(showConcatenatedInfo());
 });
