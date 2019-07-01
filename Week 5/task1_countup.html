@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Practical</title>
+    <title>Practical - Count Up</title>
 
     <meta charset="utf-8">
     <meta name="description" content="Jack's Learning Log">
@@ -33,17 +33,32 @@
         <div id="content">
             <h1>Task 1 - Working with Arrays</h1>
             <form>
-                Input a number to count-up to:<br>
+                <!-- Counting with for loop -->
+                Input a number to count-up to (for loop):<br>
                 <input type="number" id="input-count-up" name="Count-Up"><br>
+                <input type="button" id="button-start-count-up" value="Start Counting">
 
+                <div id="div-count-up-output"></div>
+                <div id="spacing" />
+  
+                <!-- Counting with while loop -->
+                Input a number to count-up to (while loop):<br>
+                <input type="number" id="input-count-up-while" name="Count-Up"><br>
+                <input type="button" id="button-start-count-up-while" value="Start Counting">
+
+                <div id="div-count-up-output-while"></div>
                 <div id="spacing" />
 
-                <input type="button" id="button-start-count-up" value="Start Counting">
+                <!-- Counting with do...while loop -->
+                Input a number to count-up to (do...while loop):<br>
+                <input type="number" id="input-count-up-dowhile" name="Count-Up"><br>
+                <input type="button" id="button-start-count-up-dowhile" value="Start Counting">
+
+                <div id="div-count-up-output-dowhile"></div>
+                <div id="spacing" />
             </form>
 
-            <div id="div-count-up-output"></div>
-
-            <script type="text/javascript" src="task1.js"></script>
+            <script type="text/javascript" src="task1_countup.js"></script>
         </div>
     </div>
 </body>
