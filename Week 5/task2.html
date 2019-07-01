@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Week 5</title>
+    <title>Task 2</title>
 
     <meta charset="utf-8">
     <meta name="description" content="Jack's Learning Log">
@@ -14,6 +14,7 @@
     <div id="outer-container">
         <div id="sidebar">
             <h1>Weeks</h1>
+
             <ul id="sidebar-nav-options">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../Week 1/week.html">Week 1</a></li>
@@ -30,15 +31,30 @@
         </div>
 
         <div id="content">
-            <h1>Task 1 - Loops</h1>
-            <p><a href="task1_countup.html">Link to <em>Count Up</em> webpage.</a></p>
-            <p><a href="task1_countdown.html">Link to <em>Count Down</em> webpage.</a></p>
-
             <h1>Task 2 - Loops with Arrays</h1>
-            <p><a href="task2.html">Link to Task 2 webpage.</a></p>
 
-            <h1>Learning Summary</h1>
-            <p><a href="learning_summary.html">Learning Summary</a></p>
+            <p>I have copied the exact html & js files from Practical5_Q3c. Only changes are file names and the JavaScript function "addOptionsToSelect" which now uses for loops rather than foreach.</p>
+
+            <form id="form-task2b" action="idk">
+                Name:<br>
+                <input type="text" id="input-name" name="Name"><br>
+
+                <br>University:<br>
+                <input type="radio" id="input-radio-queens" name="Queen's University Belfast"><br>
+                <input type="radio" id="input-radio-uu" name="University of Ulster"><br>
+
+                <br>Campus:</br>
+                <select name="Campuses" id="select-campuses"></select><br>
+
+                <br>Course:</br>
+                <select name="Courses" id="select-courses"></select><br>
+
+                <div id="spacing" />
+            </form>
+
+            <input type="button" id="button-Practical5_Q3b-showConcatenatedInfo" value="Show concatenated info">
+
+            <script type="text/javascript" src="task2.js"></script>
         </div>
     </div>
 </body>

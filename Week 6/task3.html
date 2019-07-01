@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Week 5</title>
+    <title>Week 6 - Task 3</title>
 
     <meta charset="utf-8">
     <meta name="description" content="Jack's Learning Log">
@@ -30,17 +30,26 @@
         </div>
 
         <div id="content">
-            <h1>Task 1 - Loops</h1>
-            <p><a href="task1_countup.html">Link to <em>Count Up</em> webpage.</a></p>
-            <p><a href="task1_countdown.html">Link to <em>Count Down</em> webpage.</a></p>
-
-            <h1>Task 2 - Loops with Arrays</h1>
-            <p><a href="task2.html">Link to Task 2 webpage.</a></p>
-
-            <h1>Learning Summary</h1>
-            <p><a href="learning_summary.html">Learning Summary</a></p>
+            <form id="form-checking-grades">
+                Mark 1:<br>
+                <input type="number" min="0" max="100" maxlength="3" id="input-mark1" name="Mark 1"><br>
+                
+                Mark 2:<br>
+                <input type="number" min="0" max="100" maxlength="3" id="input-mark2" name="Mark 2"><br>
+                
+                Mark 3:<br>
+                <input type="number" min="0" max="100" maxlength="3" id="input-mark3" name="Mark 3"><br>
+                
+                Mark 4:<br>
+                <input type="number" min="0" max="100" maxlength="3" id="input-mark4" name="Mark 4"><br>
+            </form>
+            
+            <div id="spacing" />
+            <input type="button" id="button-show-average-mark" value="Calculate Average">
         </div>
     </div>
+    
+    <script type="text/javascript" src="task3.js"></script>
 </body>
 
 </html>
