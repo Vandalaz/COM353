@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Favourite Music Survey</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Jack's Learning Log">
+    <meta name="author" content="Jack Orr">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="outer-container">
+        <div id="sidebar">
+            <h1>Weeks</h1>
+            <ul id="sidebar-nav-options">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Week 1/week.html">Week 1</a></li>
+                <li><a href="../Week 2/week.html">Week 2</a></li>
+                <li><a href="../Week 3/week.html">Week 3</a></li>
+                <li><a href="../Week 4/week.html">Week 4</a></li>
+                <li><a href="../Week 5/week.html">Week 5</a></li>
+                <li><a href="../Week 6/week.html">Week 6</a></li>
+                <li><a href="../Week 7/week.html">Week 7</a></li>
+                <li><a href="../Week 8/week.html">Week 8</a></li>
+                <li><a href="../Week 9/week.html">Week 9</a></li>
+                <li><a href="../Week 10/week.html">Week 10</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h1>Task 2</h1>
+            <h2>User Survey Details</h2>
+            <hr>
+
+            <p><b>User Information</b><br>
+                Please enter your details below:</p>
+
+            <form class="form-inline" action="" id="form-user-survey" name=userSurvey">
+                <label for="userName">Name:</label>
+                <input type="text" id="input-candidate-first-name" placeholder="Enter name" name="userName">
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="input-candidate-surname" placeholder="Enter phone" name="phone">
+
+                <p>Please choose your favourite types of books (check all that apply).</p>
+
+                <label for="genreSciFi">Science Fiction</label>
+                <input type="checkbox" name="genreSciFi" value="Science Fiction">
+
+                <label for="genreRomance">Romance</label>
+                <input type="checkbox" name="genreRomance" value="Romance">
+
+                <label for="genreHorror">Horror</label>
+                <input type="checkbox" name="genreHorror" value="Horror">
+
+                <!-- <br>Phone:
+                <input type="text" id="input-candidate-surname" name="phone"><br>
+
+                <br>Age:
+                <input type="number" id="input-candidate-age" name="form-input"><br>
+
+                <br>Marital Status:
+                <select name="Marital Status" id="select-marital-status"></select><br> -->
+            </form>
+
+            <hr>
+            <button type="submit">Submit</button>
+            <!-- <div id="spacing" /> -->
+        </div>
+    </div>
+
+    <script type="text/javascript" src="populate_input_fields.js"></script>
+    <script type="text/javascript" src="validate_candidate_input.js"></script>
+    <script type="text/javascript" src="candidate.js"></script>
+    <script type="text/javascript" src="classify_candidate.js"></script>
+</body>
+
+</html>
