@@ -37,44 +37,70 @@
             <p><b>User Information</b><br>
                 Please enter your details below:</p>
 
-            <form class="form-inline" action="" id="form-user-survey" name=userSurvey">
+            <form class="form-inline" action="" id="form-user-survey" name="userSurvey" onsubmit="return validateInput();">
                 <label for="userName">Name:</label>
                 <input type="text" id="input-candidate-first-name" placeholder="Enter name" name="userName">
 
                 <label for="phone">Phone:</label>
                 <input type="text" id="input-candidate-surname" placeholder="Enter phone" name="phone">
 
+                <label for="userEmail">Email:</label>
+                <input type="text" id="input-candidate-email" placeholder="Enter email" name="userEmail">
+
                 <p>Please choose your favourite types of books (check all that apply).</p>
 
-                <label for="genreSciFi">Science Fiction</label>
-                <input type="checkbox" name="genreSciFi" value="Science Fiction">
+                <label for="bookChoice0">Science Fiction</label>
+                <input type="checkbox" name="bookChoice0" value="Science Fiction">
 
-                <label for="genreRomance">Romance</label>
-                <input type="checkbox" name="genreRomance" value="Romance">
+                <label for="bookChoice1">Romance</label>
+                <input type="checkbox" name="bookChoice1" value="Romance">
 
-                <label for="genreHorror">Horror</label>
-                <input type="checkbox" name="genreHorror" value="Horror">
+                <label for="bookChoice2">Horror</label>
+                <input type="checkbox" name="bookChoice2" value="Horror"><br>
 
-                <!-- <br>Phone:
-                <input type="text" id="input-candidate-surname" name="phone"><br>
+                <label for="bookChoice3">Thriller</label>
+                <input type="checkbox" name="bookChoice3" value="Thriller"><br>
 
-                <br>Age:
-                <input type="number" id="input-candidate-age" name="form-input"><br>
-
-                <br>Marital Status:
-                <select name="Marital Status" id="select-marital-status"></select><br> -->
+                <!-- <div id="spacing" />
+                <hr> -->
+                <button type="submit">Submit</button>
             </form>
 
+            <textarea name="textAreaOutput" id="textArea-output" cols="50" rows="10"></textarea>
+
             <hr>
-            <button type="submit">Submit</button>
-            <!-- <div id="spacing" /> -->
+
+            <h2>Explanation of validNo()</h2>
+            <ol>
+                <li>If statement checks if value is present in the input.</li>
+                <li>If false, show an alert, focus on the input, return false.</li>
+                <li>If there is a value present, begin executing the else clause.</li>
+                <li>Initialise a few empty strings and also a variable that holds the value in the phone input.</li>
+                <li>Begin a for loop which will loop over the user input.</li>
+                <li>1 character at a time, check if the character is a number between 0 and 9. If it is, add it to the numbersOnly string.</li>
+                <li>Do this until we have looped over all the input values.</li>
+                <li>If numbersOnly is not 13 digits, show an alert, focus on the field, and return false.</li>
+                <li>If the number is indeed 13 digits, begin performing substrings to pull values out into variables.</li>
+                <li>After setting variables for area code, leading0, exchange, ext1, and ext2; concatenate them into a new format.</li>
+                <li>Populate the input field with this new string and return true.</li>
+            </ol>
+
+            <h2>Explanation of validEmail()</h2>
+            <ol>
+                <li>Check if email is set in the form.</li>
+                <li>If not, show an alert, focus on the email field, and return false.</li>
+                <li>If the email value is present, execute the else branch.</li>
+                <li>Initalise emailAddress variable to the value input by the user.</li>
+                <li>Use indexOf to find the index of the characters @ & . in the input string.</li>
+                <li>An if statement checks that these index values are greater than 0 and thus the characters are present.</li>
+                <li>It also checks to make sure that they are not the only 2 values input.</li>
+                <li>If these conditions have been satisfied, return true.</li>
+                <li>Otherwise, show an alert, focus on the email field, and return false.</li>
+            </ol>
         </div>
     </div>
 
-    <script type="text/javascript" src="populate_input_fields.js"></script>
-    <script type="text/javascript" src="validate_candidate_input.js"></script>
-    <script type="text/javascript" src="candidate.js"></script>
-    <script type="text/javascript" src="classify_candidate.js"></script>
+    <script type="text/javascript" src="validate_user_input.js"></script>
 </body>
 
 </html>
