@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Task 2 - Hands on with JS</title>
+    <title>Week 3 - Task 2</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Jack's Learning Log">
+    <meta name="author" content="Jack Orr">
+
+    <link rel="stylesheet" href="../css/styles.css">
 
     <script>
         var myAge = 45;
@@ -12,70 +18,94 @@
 </head>
 
 <body>
-    <h1>Task 2 - Hands on with JS</h1>
+    <div id="outer-container">
+        <div id="sidebar">
+            <h1>Weeks</h1>
 
-    <h3>myAge = “My age is” + “ ” + myAge ";</h3>
-    <p>Initial explanation: <i>N/A.</i></p>
-    <p id="result1">Placeholder</p>
-    <p><i>Explanation: The value of myAge is a string "My age is 49". </i></p>
-    <script>
-        var myParagraph = document.getElementById('result1');
-        myParagraph.innerHTML = myAge;
-        myParagraph.style.color = 'Red';
-    </script>
+            <ul id="sidebar-nav-options">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Week 1/week.html">Week 1</a></li>
+                <li><a href="../Week 2/week.html">Week 2</a></li>
+                <li><a href="../Week 3/week.html">Week 3</a></li>
+                <li><a href="../Week 4/week.html">Week 4</a></li>
+                <li><a href="../Week 5/week.html">Week 5</a></li>
+                <li><a href="../Week 6/week.html">Week 6</a></li>
+                <li><a href="../Week 7/week.html">Week 7</a></li>
+                <li><a href="../Week 8/week.html">Week 8</a></li>
+                <li><a href="../Week 9/week.html">Week 9</a></li>
+                <li><a href="../Week 10/week.html">Week 10</a></li>
+            </ul>
+        </div>
 
-    <h1>Additional Statements</h1>
+        <div id="content">
+            <h1>Task 2 - Hands on with JS</h1>
 
-    <h3>myAge ++;</h3>
-    <p>Initial explanation: <i>Increment (Postfix) operator that simply increase myAge by 1. It is now 50.</i></p>
-    <p id="result2">Actual Result:</p>
-    <p>Explanation: <i>In Task 1, myAge was an integer the entire time. Here we are trying to increment a string which results in NaN.</i></p>
-    <script>
-        myAge++;
+            <h3>myAge = “My age is” + “ ” + myAge ";</h3>
+            <p>Initial explanation: <i>N/A.</i></p>
+            <p id="result1">Placeholder</p>
+            <p><i>Explanation: The value of myAge is a string "My age is 49". </i></p>
+            <script>
+                var myParagraph = document.getElementById('result1');
+                myParagraph.innerHTML = myAge;
+                myParagraph.style.color = 'Red';
+            </script>
 
-        var myParagraph = document.getElementById('result2');
-        myParagraph.innerHTML = myAge;
-        myParagraph.style.color = 'Red';
-    </script>
+            <h1>Additional Statements</h1>
 
-    <h3>myAge == 40+10</h3>
-    <p>Initial explanation: <i>This is an comparison operator that checks if myAge's value is equal to 50 (40 + 10).
-            While this would be true, the result is not assigned anywhere.</i></p>
-    <p id="result3">Actual Result:</p>
-    <p>Explanation: <i>Since myAge is now equal to NaN (Not a Number), the value is not equal to 50 and thus the result
-            is false.</i></p>
-    <script>
-        myAge == 40 + 10;
+            <h3>myAge ++;</h3>
+            <p>Initial explanation: <i>Increment (Postfix) operator that simply increase myAge by 1. It is now 50.</i></p>
+            <p id="result2">Actual Result:</p>
+            <p>Explanation: <i>In Task 1, myAge was an integer the entire time. Here we are trying to increment a string which results in NaN.</i></p>
+            <script>
+                myAge++;
 
-        var myParagraph = document.getElementById('result3');
-        myParagraph.innerHTML = myAge;
-        myParagraph.style.color = 'Red';
-    </script>
+                var myParagraph = document.getElementById('result2');
+                myParagraph.innerHTML = myAge;
+                myParagraph.style.color = 'Red';
+            </script>
 
-    <h3>myAge &lt=38;</h3>
-    <p>Initial explanation: <i>Another comparison operator, this time the code is checking if myAge
-            is less than or equal to 38. Is it not so the result would be false.</i></p>
-    <p id="result4">Actual Result:</p>
-    <p>Explanation: <i>Since myAge is now equal to NaN (Not a Number), the value is not less than or equal to 38 throws NaN.</i></p>
-    <script>
-        myAge <= 38;
+            <h3>myAge == 40+10</h3>
+            <p>Initial explanation: <i>This is an comparison operator that checks if myAge's value is equal to 50 (40 + 10).
+                    While this would be true, the result is not assigned anywhere.</i></p>
+            <p id="result3">Actual Result:</p>
+            <p>Explanation: <i>Since myAge is now equal to NaN (Not a Number), the value is not equal to 50 and thus the result
+                    is false.</i></p>
+            <script>
+                myAge == 40 + 10;
 
-        var myParagraph = document.getElementById('result4');
-        myParagraph.innerHTML = myAge;
-        myParagraph.style.color = 'Red';
-    </script>
+                var myParagraph = document.getElementById('result3');
+                myParagraph.innerHTML = myAge;
+                myParagraph.style.color = 'Red';
+            </script>
 
-    <h3>myAge =40;</h3>
-    <p>Initial explanation: <i>Here, we assign the value of 40 to myAge.</i></p>
-    <p id="result5">Actual Result:</p>
-    <p>Explanation: <i>myAge is set to an integer with value 40.</i></p>
-    <script>
-        myAge = 40;
+            <h3>myAge &lt=38;</h3>
+            <p>Initial explanation: <i>Another comparison operator, this time the code is checking if myAge
+                    is less than or equal to 38. Is it not so the result would be false.</i></p>
+            <p id="result4">Actual Result:</p>
+            <p>Explanation: <i>Since myAge is now equal to NaN (Not a Number), the value is not less than or equal to 38 throws NaN.</i></p>
+            <script>
+                myAge <= 38;
 
-        var myParagraph = document.getElementById('result5');
-        myParagraph.innerHTML = myAge;
-        myParagraph.style.color = 'Red';
-    </script>
+                var myParagraph = document.getElementById('result4');
+                myParagraph.innerHTML = myAge;
+                myParagraph.style.color = 'Red';
+            </script>
+
+            <h3>myAge =40;</h3>
+            <p>Initial explanation: <i>Here, we assign the value of 40 to myAge.</i></p>
+            <p id="result5">Actual Result:</p>
+            <p>Explanation: <i>myAge is set to an integer with value 40.</i></p>
+            <script>
+                myAge = 40;
+
+                var myParagraph = document.getElementById('result5');
+                myParagraph.innerHTML = myAge;
+                myParagraph.style.color = 'Red';
+            </script>
+        </div>
+    </div>
 </body>
 
 </html>
+
+
