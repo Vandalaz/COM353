@@ -31,8 +31,7 @@
 
         <div id="content">
             <h1>Task 2 - Slideshow</h1>
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
+            <div class="mySlideshow">
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
@@ -53,13 +52,11 @@
                     <div class="text">Scenic valley view</div>
                 </div>
 
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="previousButton" onclick="changeSlides(-1)">&#10094;</a>
+                <a class="nextButton" onclick="changeSlides(1)">&#10095;</a>
             </div>
             <br>
 
-            <!-- The dots/circles -->
             <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
